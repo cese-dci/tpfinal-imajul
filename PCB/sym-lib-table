@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name PS2805)(type Legacy)(uri ${KIPRJMOD}/PS2805.lib)(options "")(descr ""))
+  (lib (name bat54_c)(type Legacy)(uri ${KIPRJMOD}/bat54_c.lib)(options "")(descr ""))
+  (lib (name g5v-2-ima)(type Legacy)(uri /home/ignacio/Escritorio/g5v-2-ima.lib)(options "")(descr ""))
+)

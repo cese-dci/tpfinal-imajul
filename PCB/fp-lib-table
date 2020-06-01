@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name g5v-2)(type Legacy)(uri /home/ignacio/Escritorio/Hardware-master/PCB/NXP/footprints/g5v-2.mod)(options "")(descr ""))
+  (lib (name Battery)(type KiCad)(uri /home/ignacio/Descargas/Battery.pretty)(options "")(descr ""))
+)
