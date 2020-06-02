@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Screw_Terminal_01x02 DI1
-U 1 1 5F16C92E
-P 4750 1100
-F 0 "DI1" H 4668 1317 50  0000 C CNN
-F 1 "01x02" H 4668 1226 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4750 1100 50  0001 C CNN
-F 3 "~" H 4750 1100 50  0001 C CNN
-	1    4750 1100
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R6
 U 1 1 5F54DFD8
 P 9350 1900
@@ -41,7 +30,7 @@ U 1 1 5F54DFE2
 P 9700 1900
 F 0 "D2" H 9800 2000 50  0000 C CNN
 F 1 "rojo" H 9650 2000 50  0000 C CNN
-F 2 "LED_SMD:LED_0201_0603Metric" H 9700 1900 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9700 1900 50  0001 C CNN
 F 3 "~" H 9700 1900 50  0001 C CNN
 	1    9700 1900
 	-1   0    0    -1  
@@ -81,8 +70,6 @@ F 3 "" H 9950 2600 50  0001 C CNN
 $EndComp
 Text Label 9000 2250 2    50   ~ 0
 GPIO7
-Wire Notes Line
-	11000 650  8000 650 
 Text Notes 8050 750  0    50   ~ 0
 Salidas Digitales
 Wire Wire Line
@@ -127,7 +114,7 @@ U 1 1 5EDC316E
 P 8900 5850
 F 0 "C2" H 9015 5896 50  0000 L CNN
 F 1 "100nF" H 9015 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 8938 5700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8938 5700 50  0001 C CNN
 F 3 "~" H 8900 5850 50  0001 C CNN
 	1    8900 5850
 	1    0    0    -1  
@@ -138,7 +125,7 @@ U 1 1 5EDC253D
 P 8450 5850
 F 0 "C1" H 8565 5896 50  0000 L CNN
 F 1 "100nF" H 8565 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 8488 5700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 5700 50  0001 C CNN
 F 3 "~" H 8450 5850 50  0001 C CNN
 	1    8450 5850
 	1    0    0    -1  
@@ -171,7 +158,7 @@ U 1 1 5EDDAF3A
 P 2450 5050
 F 0 "C3" H 2565 5096 50  0000 L CNN
 F 1 "1nF" H 2565 5005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2488 4900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2488 4900 50  0001 C CNN
 F 3 "~" H 2450 5050 50  0001 C CNN
 	1    2450 5050
 	1    0    0    -1  
@@ -420,37 +407,19 @@ Wire Wire Line
 Wire Wire Line
 	5400 1250 5450 1250
 Wire Wire Line
-	4950 1100 5100 1100
-Wire Wire Line
 	5400 1100 5450 1100
 Wire Wire Line
 	5450 1100 5450 1150
 Connection ~ 5450 1150
 Wire Wire Line
-	4950 1200 5050 1200
-Wire Wire Line
-	5050 1200 5050 1250
-Wire Wire Line
 	5050 1250 5100 1250
 Wire Wire Line
-	5050 1250 5050 1350
+	5050 1250 5050 1300
 Wire Wire Line
 	5050 1350 5500 1350
-Connection ~ 5050 1250
 Wire Wire Line
 	6350 1350 6200 1350
 Connection ~ 6350 1350
-$Comp
-L Connector:Screw_Terminal_01x02 DI2
-U 1 1 6055598E
-P 4750 1900
-F 0 "DI2" H 4668 2117 50  0000 C CNN
-F 1 "01x02" H 4668 2026 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4750 1900 50  0001 C CNN
-F 3 "~" H 4750 1900 50  0001 C CNN
-	1    4750 1900
-	-1   0    0    -1  
-$EndComp
 $Comp
 L PS2805:PS2805-4 U1
 U 2 1 60555998
@@ -561,30 +530,14 @@ Wire Wire Line
 	5450 1900 5450 1950
 Connection ~ 5450 1950
 Wire Wire Line
-	4950 2000 5050 2000
-Wire Wire Line
-	5050 2000 5050 2050
-Wire Wire Line
 	5050 2050 5100 2050
 Wire Wire Line
-	5050 2050 5050 2150
+	5050 2050 5050 2100
 Wire Wire Line
 	5050 2150 5500 2150
-Connection ~ 5050 2050
 Wire Wire Line
 	6350 2150 6200 2150
 Connection ~ 6350 2150
-$Comp
-L Connector:Screw_Terminal_01x02 DI3
-U 1 1 6066CF1C
-P 4750 2700
-F 0 "DI3" H 4668 2917 50  0000 C CNN
-F 1 "01x02" H 4668 2826 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4750 2700 50  0001 C CNN
-F 3 "~" H 4750 2700 50  0001 C CNN
-	1    4750 2700
-	-1   0    0    -1  
-$EndComp
 $Comp
 L PS2805:PS2805-4 U1
 U 3 1 6066CF26
@@ -695,16 +648,11 @@ Wire Wire Line
 	5450 2700 5450 2750
 Connection ~ 5450 2750
 Wire Wire Line
-	4950 2800 5050 2800
-Wire Wire Line
-	5050 2800 5050 2850
-Wire Wire Line
 	5050 2850 5100 2850
 Wire Wire Line
-	5050 2850 5050 2950
+	5050 2850 5050 2900
 Wire Wire Line
 	5050 2950 5500 2950
-Connection ~ 5050 2850
 Wire Wire Line
 	6350 2950 6200 2950
 Connection ~ 6350 2950
@@ -714,7 +662,7 @@ U 1 1 6096DE65
 P 9750 1500
 F 0 "D1" V 9704 1421 50  0000 R CNN
 F 1 "1N4148" V 9795 1421 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 9750 1325 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 9750 1325 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9750 1500 50  0001 C CNN
 	1    9750 1500
 	0    1    1    0   
@@ -761,17 +709,6 @@ Wire Wire Line
 	9500 2250 9500 2500
 Wire Wire Line
 	9100 1900 9200 1900
-$Comp
-L Connector:Screw_Terminal_01x06 DO1
-U 1 1 60FDFDCC
-P 8200 1650
-F 0 "DO1" H 8200 2100 50  0000 C CNN
-F 1 "01x06" H 8150 2000 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-6_P5.08mm" H 8200 1650 50  0001 C CNN
-F 3 "~" H 8200 1650 50  0001 C CNN
-	1    8200 1650
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	9950 2050 9950 1900
 Text Label 10450 1200 1    50   ~ 0
@@ -795,50 +732,50 @@ NA1A
 Text Label 10850 1950 3    50   ~ 0
 NA1B
 Wire Wire Line
-	8400 1450 8550 1450
-Text Label 8550 1450 0    50   ~ 0
+	8300 1200 8450 1200
+Text Label 8450 1200 0    50   ~ 0
 COM1A
 Wire Wire Line
-	8400 1550 8550 1550
-Text Label 8550 1550 0    50   ~ 0
+	8300 1400 8450 1400
+Text Label 8450 1400 0    50   ~ 0
 NC1A
 Wire Wire Line
-	8400 1650 8550 1650
-Text Label 8550 1650 0    50   ~ 0
+	8300 1600 8450 1600
+Text Label 8450 1600 0    50   ~ 0
 NA1A
 Wire Wire Line
-	8400 1750 8550 1750
-Text Label 8350 3100 2    50   ~ 0
-COM1B
-Wire Wire Line
-	8400 1850 8550 1850
-Text Label 9150 3200 0    50   ~ 0
-NC1B
-Wire Wire Line
-	8400 1950 8550 1950
-Text Label 8350 3200 2    50   ~ 0
-NA1B
-Text Label 8550 1750 0    50   ~ 0
-COM2A
-Wire Wire Line
-	8350 3100 8500 3100
-Text Label 8550 1850 0    50   ~ 0
-NC2A
-Wire Wire Line
-	8350 3200 8500 3200
-Text Label 8550 1950 0    50   ~ 0
-NA2A
-Wire Wire Line
-	9000 3000 9150 3000
-Text Label 9150 3000 0    50   ~ 0
+	8300 1800 8450 1800
+Text Label 8150 3150 2    50   ~ 0
 COM2B
 Wire Wire Line
-	9000 3100 9150 3100
-Text Label 8350 3000 2    50   ~ 0
+	8300 2000 8450 2000
+Text Label 8950 3250 0    50   ~ 0
 NC2B
 Wire Wire Line
-	9000 3200 9150 3200
-Text Label 9150 3100 0    50   ~ 0
+	8300 2200 8450 2200
+Text Label 8150 3250 2    50   ~ 0
+NA2B
+Text Label 8450 1800 0    50   ~ 0
+COM2A
+Wire Wire Line
+	8150 3150 8300 3150
+Text Label 8450 2000 0    50   ~ 0
+NC2A
+Wire Wire Line
+	8150 3250 8300 3250
+Text Label 8450 2200 0    50   ~ 0
+NA2A
+Wire Wire Line
+	8800 3050 8950 3050
+Text Label 8950 3050 0    50   ~ 0
+COM2B
+Wire Wire Line
+	8800 3150 8950 3150
+Text Label 8150 3050 2    50   ~ 0
+NC2B
+Wire Wire Line
+	8800 3250 8950 3250
+Text Label 8950 3150 0    50   ~ 0
 NA2B
 Wire Wire Line
 	10450 1200 10450 1300
@@ -875,14 +812,14 @@ Connection ~ 9950 1350
 Wire Wire Line
 	9950 1350 9950 1400
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even DO2
+L Connector_Generic:Conn_02x03_Odd_Even DOB1
 U 1 1 61C48A0E
-P 8800 3100
-F 0 "DO2" H 8850 3417 50  0000 C CNN
-F 1 "01x06" H 8850 3326 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8800 3100 50  0001 C CNN
-F 3 "~" H 8800 3100 50  0001 C CNN
-	1    8800 3100
+P 8600 3150
+F 0 "DOB1" H 8650 3467 50  0000 C CNN
+F 1 "01x06" H 8650 3376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8600 3150 50  0001 C CNN
+F 3 "~" H 8600 3150 50  0001 C CNN
+	1    8600 3150
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -902,7 +839,7 @@ U 1 1 61C963A9
 P 9700 3900
 F 0 "D4" H 9800 4000 50  0000 C CNN
 F 1 "rojo" H 9650 4000 50  0000 C CNN
-F 2 "LED_SMD:LED_0201_0603Metric" H 9700 3900 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9700 3900 50  0001 C CNN
 F 3 "~" H 9700 3900 50  0001 C CNN
 	1    9700 3900
 	-1   0    0    -1  
@@ -961,7 +898,7 @@ U 1 1 61C963DE
 P 9750 3500
 F 0 "D3" V 9704 3421 50  0000 R CNN
 F 1 "1N4148" V 9795 3421 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 9750 3325 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 9750 3325 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9750 3500 50  0001 C CNN
 	1    9750 3500
 	0    1    1    0   
@@ -1011,25 +948,25 @@ Wire Wire Line
 Wire Wire Line
 	9950 4050 9950 3900
 Text Label 10450 3200 1    50   ~ 0
-COM1A
+COM2A
 Text Label 10750 3200 1    50   ~ 0
-COM1B
+COM2B
 Wire Wire Line
 	10400 3950 10400 3750
 Wire Wire Line
 	10700 3950 10700 3750
 Text Label 10400 3950 3    50   ~ 0
-NC1A
+NC2A
 Text Label 10700 3950 3    50   ~ 0
-NC1B
+NC2B
 Wire Wire Line
 	10550 3950 10550 3750
 Wire Wire Line
 	10850 3950 10850 3750
 Text Label 10550 3950 3    50   ~ 0
-NA1A
+NA2A
 Text Label 10850 3950 3    50   ~ 0
-NA1B
+NA2B
 Wire Wire Line
 	10450 3200 10450 3300
 Wire Wire Line
@@ -1057,8 +994,6 @@ Wire Wire Line
 Wire Wire Line
 	9750 3650 9950 3650
 Connection ~ 9950 3650
-Wire Notes Line
-	8000 5000 11000 5000
 Wire Wire Line
 	9950 3350 9950 3400
 Wire Wire Line
@@ -1087,16 +1022,10 @@ Wire Wire Line
 	6250 1950 6250 1850
 Wire Wire Line
 	6250 2750 6250 2650
-Wire Notes Line
-	7450 650  4550 650 
-Wire Notes Line
-	4550 3800 7450 3800
 Wire Wire Line
 	2300 4900 2450 4900
 Wire Wire Line
 	1900 4300 1900 4400
-Wire Wire Line
-	1300 4700 1300 5000
 Wire Wire Line
 	1900 5250 1900 5200
 Wire Wire Line
@@ -1104,23 +1033,12 @@ Wire Wire Line
 Wire Wire Line
 	2450 5300 2450 5250
 $Comp
-L Connector:Screw_Terminal_01x02 AI1
-U 1 1 62625E8A
-P 900 4600
-F 0 "AI1" H 818 4817 50  0000 C CNN
-F 1 "01x02" H 818 4726 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 900 4600 50  0001 C CNN
-F 3 "~" H 900 4600 50  0001 C CNN
-	1    900  4600
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:C C6
 U 1 1 62653942
 P 2450 6400
 F 0 "C6" H 2565 6446 50  0000 L CNN
 F 1 "1nF" H 2565 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2488 6250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2488 6250 50  0001 C CNN
 F 3 "~" H 2450 6400 50  0001 C CNN
 	1    2450 6400
 	1    0    0    -1  
@@ -1170,17 +1088,6 @@ Wire Wire Line
 	2450 6600 2450 6550
 Wire Wire Line
 	2450 6650 2450 6600
-$Comp
-L Connector:Screw_Terminal_01x02 AI2
-U 1 1 62653978
-P 900 5950
-F 0 "AI2" H 818 6167 50  0000 C CNN
-F 1 "01x02" H 818 6076 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 900 5950 50  0001 C CNN
-F 3 "~" H 900 5950 50  0001 C CNN
-	1    900  5950
-	-1   0    0    -1  
-$EndComp
 Connection ~ 2450 5250
 Wire Wire Line
 	1900 5250 2450 5250
@@ -1191,20 +1098,6 @@ Wire Notes Line
 	3250 3950 3250 6950
 Wire Notes Line
 	700  3950 700  6950
-Wire Wire Line
-	1100 4700 1300 4700
-Wire Wire Line
-	1300 5000 1500 5000
-Wire Wire Line
-	1100 4600 1500 4600
-Wire Wire Line
-	1300 6050 1300 6350
-Wire Wire Line
-	1100 6050 1300 6050
-Wire Wire Line
-	1300 6350 1500 6350
-Wire Wire Line
-	1100 5950 1500 5950
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even P1
 U 1 1 5EC89B56
@@ -1587,7 +1480,7 @@ U 1 1 63984940
 P 10450 5850
 F 0 "C5" H 10565 5896 50  0000 L CNN
 F 1 "100nF" H 10565 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 10488 5700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10488 5700 50  0001 C CNN
 F 3 "~" H 10450 5850 50  0001 C CNN
 	1    10450 5850
 	1    0    0    -1  
@@ -1598,7 +1491,7 @@ U 1 1 6398494A
 P 10000 5850
 F 0 "C4" H 10115 5896 50  0000 L CNN
 F 1 "100nF" H 10115 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 10038 5700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10038 5700 50  0001 C CNN
 F 3 "~" H 10000 5850 50  0001 C CNN
 	1    10000 5850
 	1    0    0    -1  
@@ -1644,7 +1537,7 @@ U 1 1 63AF481C
 P 4700 4200
 F 0 "D5" H 4650 4100 50  0000 C CNN
 F 1 "1N4148" H 4700 4300 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 4700 4025 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 4700 4025 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4700 4200 50  0001 C CNN
 	1    4700 4200
 	-1   0    0    1   
@@ -1701,13 +1594,13 @@ Bus I2C\nRTC + EEPROM
 Wire Notes Line
 	3650 3950 7450 3950
 Wire Notes Line
-	8000 650  8000 5000
+	7700 650  7700 5000
 Wire Notes Line
 	11000 650  11000 5000
 Wire Notes Line
 	7450 650  7450 3800
 Wire Notes Line
-	4550 650  4550 3800
+	4400 650  4400 3800
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5ED84ED5
@@ -1833,5 +1726,123 @@ Connection ~ 7100 2900
 Wire Wire Line
 	7100 2900 7100 2950
 Wire Wire Line
-	8350 3000 8500 3000
+	8150 3050 8300 3050
+$Comp
+L w_device:TB_1X3 DO1A1
+U 1 1 5EE96028
+P 7950 1300
+F 0 "DO1A1" H 8082 1689 60  0000 C CNN
+F 1 "TB_1X3" H 8082 1583 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier3" H 8082 1583 60  0001 C CNN
+F 3 "" H 7900 1350 60  0000 C CNN
+	1    7950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_device:TB_1X2 AI1
+U 1 1 5EEA00D2
+P 950 4700
+F 0 "AI1" H 1082 5089 60  0000 C CNN
+F 1 "TB_1X2" H 1082 4983 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 1082 4983 60  0001 C CNN
+F 3 "" H 900 4750 60  0000 C CNN
+	1    950  4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4600 1500 4600
+Wire Wire Line
+	1300 4800 1400 4800
+Wire Wire Line
+	1400 4800 1400 5000
+Wire Wire Line
+	1400 5000 1500 5000
+$Comp
+L w_device:TB_1X2 AI2
+U 1 1 5EF43FA9
+P 950 6050
+F 0 "AI2" H 1082 6439 60  0000 C CNN
+F 1 "TB_1X2" H 1082 6333 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 1082 6333 60  0001 C CNN
+F 3 "" H 900 6100 60  0000 C CNN
+	1    950  6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5950 1500 5950
+Wire Wire Line
+	1300 6150 1400 6150
+Wire Wire Line
+	1400 6150 1400 6350
+Wire Wire Line
+	1400 6350 1500 6350
+Wire Wire Line
+	4950 1100 5100 1100
+$Comp
+L w_device:TB_1X2 DI1
+U 1 1 5EF8CDE6
+P 4600 1200
+F 0 "DI1" H 4732 1589 60  0000 C CNN
+F 1 "TB_1X2" H 4732 1483 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 4732 1483 60  0001 C CNN
+F 3 "" H 4550 1250 60  0000 C CNN
+	1    4600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1300 4950 1300
+Connection ~ 5050 1300
+Wire Wire Line
+	5050 1300 5050 1350
+$Comp
+L w_device:TB_1X2 DI2
+U 1 1 5F03EFA4
+P 4600 2000
+F 0 "DI2" H 4732 2389 60  0000 C CNN
+F 1 "TB_1X2" H 4732 2283 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 4732 2283 60  0001 C CNN
+F 3 "" H 4550 2050 60  0000 C CNN
+	1    4600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L w_device:TB_1X2 DI3
+U 1 1 5F03FC18
+P 4600 2800
+F 0 "DI3" H 4732 3189 60  0000 C CNN
+F 1 "TB_1X2" H 4732 3083 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 4732 3083 60  0001 C CNN
+F 3 "" H 4550 2850 60  0000 C CNN
+	1    4600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2100 4950 2100
+Connection ~ 5050 2100
+Wire Wire Line
+	5050 2100 5050 2150
+Wire Wire Line
+	5050 2900 4950 2900
+Connection ~ 5050 2900
+Wire Wire Line
+	5050 2900 5050 2950
+Wire Notes Line
+	4400 650  7450 650 
+$Comp
+L w_device:TB_1X3 DO2A1
+U 1 1 5F144B65
+P 7950 1900
+F 0 "DO2A1" H 8082 1417 60  0000 C CNN
+F 1 "TB_1X3" H 8082 1311 60  0000 C CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier3" H 8082 2183 60  0001 C CNN
+F 3 "" H 7900 1950 60  0000 C CNN
+	1    7950 1900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7700 650  11000 650 
+Wire Notes Line
+	4400 3800 7450 3800
+Wire Notes Line
+	7700 5000 11000 5000
 $EndSCHEMATC
