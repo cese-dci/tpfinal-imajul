@@ -808,39 +808,37 @@ Text Label 8550 1650 0    50   ~ 0
 NA1A
 Wire Wire Line
 	8400 1750 8550 1750
-Text Label 8550 1750 0    50   ~ 0
+Text Label 8350 3100 2    50   ~ 0
 COM1B
 Wire Wire Line
 	8400 1850 8550 1850
-Text Label 8550 1850 0    50   ~ 0
+Text Label 9150 3200 0    50   ~ 0
 NC1B
 Wire Wire Line
 	8400 1950 8550 1950
-Text Label 8550 1950 0    50   ~ 0
+Text Label 8350 3200 2    50   ~ 0
 NA1B
-Wire Wire Line
-	8400 3450 8550 3450
-Text Label 8550 3450 0    50   ~ 0
+Text Label 8550 1750 0    50   ~ 0
 COM2A
 Wire Wire Line
-	8400 3550 8550 3550
-Text Label 8550 3550 0    50   ~ 0
+	8350 3100 8500 3100
+Text Label 8550 1850 0    50   ~ 0
 NC2A
 Wire Wire Line
-	8400 3650 8550 3650
-Text Label 8550 3650 0    50   ~ 0
+	8350 3200 8500 3200
+Text Label 8550 1950 0    50   ~ 0
 NA2A
 Wire Wire Line
-	8400 3750 8550 3750
-Text Label 8550 3750 0    50   ~ 0
+	9000 3000 9150 3000
+Text Label 9150 3000 0    50   ~ 0
 COM2B
 Wire Wire Line
-	8400 3850 8550 3850
-Text Label 8550 3850 0    50   ~ 0
+	9000 3100 9150 3100
+Text Label 8350 3000 2    50   ~ 0
 NC2B
 Wire Wire Line
-	8400 3950 8550 3950
-Text Label 8550 3950 0    50   ~ 0
+	9000 3200 9150 3200
+Text Label 9150 3100 0    50   ~ 0
 NA2B
 Wire Wire Line
 	10450 1200 10450 1300
@@ -877,14 +875,14 @@ Connection ~ 9950 1350
 Wire Wire Line
 	9950 1350 9950 1400
 $Comp
-L Connector:Screw_Terminal_01x06 DO2
+L Connector_Generic:Conn_02x03_Odd_Even DO2
 U 1 1 61C48A0E
-P 8200 3650
-F 0 "DO2" H 8200 4100 50  0000 C CNN
-F 1 "01x06" H 8150 4000 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-6_P5.08mm" H 8200 3650 50  0001 C CNN
-F 3 "~" H 8200 3650 50  0001 C CNN
-	1    8200 3650
+P 8800 3100
+F 0 "DO2" H 8850 3417 50  0000 C CNN
+F 1 "01x06" H 8850 3326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8800 3100 50  0001 C CNN
+F 3 "~" H 8800 3100 50  0001 C CNN
+	1    8800 3100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1213,7 +1211,7 @@ U 1 1 5EC89B56
 P 1400 2150
 F 0 "P1" H 1450 3267 50  0000 C CNN
 F 1 "Conn_02x20" H 1450 3176 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x20_P1.27mm_Vertical" H 1400 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 1400 2150 50  0001 C CNN
 F 3 "~" H 1400 2150 50  0001 C CNN
 	1    1400 2150
 	1    0    0    -1  
@@ -1308,7 +1306,7 @@ U 1 1 5ED025BB
 P 2900 2150
 F 0 "P2" H 2950 3267 50  0000 C CNN
 F 1 "Conn_02x20" H 2950 3176 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x20_P1.27mm_Vertical" H 2900 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 2900 2150 50  0001 C CNN
 F 3 "~" H 2900 2150 50  0001 C CNN
 	1    2900 2150
 	1    0    0    -1  
@@ -1834,4 +1832,6 @@ Wire Wire Line
 Connection ~ 7100 2900
 Wire Wire Line
 	7100 2900 7100 2950
+Wire Wire Line
+	8350 3000 8500 3000
 $EndSCHEMATC
