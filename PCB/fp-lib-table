@@ -46,4 +46,5 @@
   (lib (name SRN1060)(type Legacy)(uri /home/ignacio/Escritorio/Hardware-master/PCB/NXP/footprints/SRN1060.mod)(options "")(descr "")(disabled))
   (lib (name TO223)(type Legacy)(uri /home/ignacio/Escritorio/Hardware-master/PCB/NXP/footprints/TO223.mod)(options "")(descr "")(disabled))
   (lib (name CIAA_footprints)(type KiCad)(uri /home/ignacio/Escritorio/DCI/tpfinal-imajul/CIAA_footprints)(options "")(descr ""))
+  (lib (name Poncho_Esqueleto)(type KiCad)(uri /home/ignacio/Escritorio/Ponchos-master/kicad/Poncho_Esqueleto.pretty)(options "")(descr ""))
 )

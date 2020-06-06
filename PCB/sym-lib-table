@@ -3,4 +3,5 @@
   (lib (name PS2805)(type Legacy)(uri /home/ignacio/Escritorio/DCI/tpfinal-imajul/Componentes/PS2805.lib)(options "")(descr ""))
   (lib (name bat54_c)(type Legacy)(uri /home/ignacio/Escritorio/DCI/tpfinal-imajul/Componentes/bat54_c.lib)(options "")(descr ""))
   (lib (name w_device)(type Legacy)(uri /home/ignacio/Escritorio/DCI/tpfinal-imajul/Componentes/w_device.lib)(options "")(descr ""))
+  (lib (name Poncho_Esqueleto)(type Legacy)(uri ${KIPRJMOD}/Poncho_Esqueleto.lib)(options "")(descr ""))
 )
