@@ -9,8 +9,8 @@ Date "2020-05-21"
 Rev "1.0"
 Comp "Poncho Fotovoltaico"
 Comment1 "Ignacio Majul"
-Comment2 ""
-Comment3 ""
+Comment2 "Revisora: Lorena Zacharewicz"
+Comment3 "Licencia: Open Source"
 Comment4 ""
 $EndDescr
 Wire Wire Line
@@ -481,11 +481,11 @@ $EndComp
 Wire Wire Line
 	8500 1300 8650 1300
 Wire Wire Line
-	9900 2850 10900 2850
+	9900 2750 10900 2750
 Wire Wire Line
-	9900 2050 10900 2050
+	9900 1950 10900 1950
 Wire Wire Line
-	9900 1250 10900 1250
+	9900 1150 10900 1150
 Text Notes 9050 750  0    50   ~ 0
 Entradas Digitales
 Connection ~ 9900 3150
@@ -512,8 +512,6 @@ Connection ~ 9900 3000
 Wire Wire Line
 	9950 3000 9900 3000
 Wire Wire Line
-	9900 2850 9900 3000
-Wire Wire Line
 	9900 3150 9950 3150
 Wire Wire Line
 	10600 3150 10650 3150
@@ -534,7 +532,7 @@ $Comp
 L Device:R R13
 U 1 1 6066CF6B
 P 10100 3000
-F 0 "R13" V 10150 2800 50  0000 C CNN
+F 0 "R13" V 10200 3000 50  0000 C CNN
 F 1 "100k" V 10100 3000 39  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 10030 3000 50  0001 C CNN
 F 3 "~" H 10100 3000 50  0001 C CNN
@@ -554,7 +552,7 @@ F 3 "~" H 10450 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10250 3150 10300 3150
-Text Label 10900 2850 2    50   ~ 0
+Text Label 10900 2750 2    50   ~ 0
 GPIO5
 Wire Wire Line
 	9750 2950 9800 2950
@@ -562,7 +560,7 @@ $Comp
 L Device:R R14
 U 1 1 6066CF3C
 P 8800 3050
-F 0 "R14" V 8700 3050 50  0000 C CNN
+F 0 "R14" V 8850 3250 50  0000 C CNN
 F 1 "4k7" V 8800 3050 39  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8730 3050 50  0001 C CNN
 F 3 "~" H 8800 3050 50  0001 C CNN
@@ -608,8 +606,6 @@ Connection ~ 9900 2200
 Wire Wire Line
 	9950 2200 9900 2200
 Wire Wire Line
-	9900 2050 9900 2200
-Wire Wire Line
 	9900 2350 9950 2350
 Wire Wire Line
 	10600 2350 10650 2350
@@ -630,7 +626,7 @@ $Comp
 L Device:R R7
 U 1 1 605559DD
 P 10100 2200
-F 0 "R7" V 10150 2000 50  0000 C CNN
+F 0 "R7" V 10200 2200 50  0000 C CNN
 F 1 "100k" V 10100 2200 39  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 10030 2200 50  0001 C CNN
 F 3 "~" H 10100 2200 50  0001 C CNN
@@ -650,7 +646,7 @@ F 3 "~" H 10450 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10250 2350 10300 2350
-Text Label 10900 2050 2    50   ~ 0
+Text Label 10900 1950 2    50   ~ 0
 GPIO3
 Wire Wire Line
 	9750 2150 9800 2150
@@ -658,7 +654,7 @@ $Comp
 L Device:R R8
 U 1 1 605559AE
 P 8800 2250
-F 0 "R8" V 8700 2250 50  0000 C CNN
+F 0 "R8" V 8850 2450 50  0000 C CNN
 F 1 "4k7" V 8800 2250 39  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8730 2250 50  0001 C CNN
 F 3 "~" H 8800 2250 50  0001 C CNN
@@ -713,8 +709,6 @@ Connection ~ 9900 1400
 Wire Wire Line
 	9950 1400 9900 1400
 Wire Wire Line
-	9900 1250 9900 1400
-Wire Wire Line
 	9900 1550 9950 1550
 Wire Wire Line
 	10600 1550 10650 1550
@@ -735,7 +729,7 @@ $Comp
 L Device:R R2
 U 1 1 5F76DBB2
 P 10100 1400
-F 0 "R2" V 10150 1200 50  0000 C CNN
+F 0 "R2" V 10200 1400 50  0000 C CNN
 F 1 "100k" V 10100 1400 39  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 10030 1400 50  0001 C CNN
 F 3 "~" H 10100 1400 50  0001 C CNN
@@ -755,13 +749,13 @@ F 3 "~" H 10450 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10250 1550 10300 1550
-Text Label 10900 1250 2    50   ~ 0
+Text Label 10900 1150 2    50   ~ 0
 GPIO1
 $Comp
 L Device:R R3
 U 1 1 5F67518F
 P 8800 1450
-F 0 "R3" V 8700 1450 50  0000 C CNN
+F 0 "R3" V 8850 1650 50  0000 C CNN
 F 1 "4k7" V 8800 1450 39  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8730 1450 50  0001 C CNN
 F 3 "~" H 8800 1450 50  0001 C CNN
@@ -1050,9 +1044,9 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 10250 5550 50
 	1    10250 5550
 	-1   0    0    -1  
 $EndComp
-Text Label 9650 5850 2    50   ~ 0
+Text Label 9650 5850 1    50   ~ 0
 SDA
-Text Label 9500 5750 2    50   ~ 0
+Text Label 9500 5750 1    50   ~ 0
 SCL
 NoConn ~ 8350 5450
 Wire Wire Line
@@ -1954,4 +1948,10 @@ Wire Notes Line style dash_dot
 	4450 7000 4550 7000
 Wire Notes Line
 	4650 7150 5200 7150
+Wire Wire Line
+	9900 1150 9900 1400
+Wire Wire Line
+	9900 1950 9900 2200
+Wire Wire Line
+	9900 2750 9900 3000
 $EndSCHEMATC

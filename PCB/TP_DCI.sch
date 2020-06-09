@@ -9,8 +9,8 @@ Date "2020-05-21"
 Rev "1.0"
 Comp "Poncho Fotovoltaico"
 Comment1 "Ignacio Majul"
-Comment2 ""
-Comment3 ""
+Comment2 "Revisora: Lorena Zacharewicz"
+Comment3 "Licencia: Open Source"
 Comment4 ""
 $EndDescr
 Wire Wire Line
@@ -788,14 +788,8 @@ F 3 "" H 9400 1450 60  0000 C CNN
 	1    9400 1450
 	1    0    0    -1  
 $EndComp
-Wire Notes Line width 10 style solid
-	-2350 -1700 -2350 -7250
-Wire Notes Line width 10 style solid
-	-2350 -7250 -12700 -7250
 Text Notes 650  4650 0    79   ~ 16
 PCB EXTERNO
-Wire Notes Line width 10 style solid
-	-12700 -7250 -12700 -3900
 Connection ~ 2250 6050
 Wire Wire Line
 	2250 6050 2550 6050
@@ -824,12 +818,6 @@ Wire Wire Line
 	1750 6400 2900 6400
 Wire Wire Line
 	2550 7000 2900 7000
-Wire Notes Line width 10 style solid
-	-9000 -3900 -9000 -1700
-Wire Notes Line width 10 style solid
-	-12700 -3900 -9000 -3900
-Wire Notes Line width 10 style solid
-	-9000 -1700 -2350 -1700
 $Comp
 L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 P1
 U 2 1 5EDF7D80
