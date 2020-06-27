@@ -45,7 +45,6 @@ NoConn ~ 2300 1400
 NoConn ~ 2300 1300
 NoConn ~ 3350 1300
 NoConn ~ 3350 1400
-NoConn ~ 3350 1500
 NoConn ~ 3350 1900
 NoConn ~ 3350 1600
 NoConn ~ 3350 3100
@@ -788,14 +787,8 @@ F 3 "" H 9400 1450 60  0000 C CNN
 	1    9400 1450
 	1    0    0    -1  
 $EndComp
-Wire Notes Line width 10 style solid
-	-2350 -1700 -2350 -7250
-Wire Notes Line width 10 style solid
-	-2350 -7250 -12700 -7250
 Text Notes 650  4650 0    79   ~ 16
 PCB EXTERNO
-Wire Notes Line width 10 style solid
-	-12700 -7250 -12700 -3900
 Connection ~ 2250 6050
 Wire Wire Line
 	2250 6050 2550 6050
@@ -824,12 +817,6 @@ Wire Wire Line
 	1750 6400 2900 6400
 Wire Wire Line
 	2550 7000 2900 7000
-Wire Notes Line width 10 style solid
-	-9000 -3900 -9000 -1700
-Wire Notes Line width 10 style solid
-	-12700 -3900 -9000 -3900
-Wire Notes Line width 10 style solid
-	-9000 -1700 -2350 -1700
 $Comp
 L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 P1
 U 2 1 5EDF7D80
@@ -1185,8 +1172,6 @@ NoConn ~ 4550 2100
 NoConn ~ 4550 2200
 NoConn ~ 4550 2300
 NoConn ~ 4550 2400
-NoConn ~ 4550 1600
-NoConn ~ 4550 1500
 NoConn ~ 4550 1400
 Wire Wire Line
 	4550 1800 4700 1800
@@ -1252,17 +1237,6 @@ Wire Wire Line
 	8850 6150 8850 6050
 Wire Wire Line
 	8850 6150 9750 6150
-$Comp
-L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 P1
-U 1 1 61EB0F83
-P 3600 1500
-F 0 "P1" H 3950 2047 60  0000 C CNN
-F 1 "Conn_Poncho2P_2x_20x2" H 3950 1941 60  0000 C CNN
-F 2 "Poncho_Esqueleto:Conn_Poncho_SinBorde" H 3950 1941 60  0001 C CNN
-F 3 "" H 3600 1500 60  0000 C CNN
-	1    3600 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 AI1-1
 U 1 1 5EDE1FB3
@@ -1954,4 +1928,41 @@ Wire Wire Line
 	9900 1950 9900 2200
 Wire Wire Line
 	9900 2750 9900 3000
+$Comp
+L power:GNDA #PWR0130
+U 1 1 5EE58A55
+P 3050 1350
+F 0 "#PWR0130" H 3050 1100 50  0001 C CNN
+F 1 "GNDA" H 3055 1177 50  0000 C CNN
+F 2 "" H 3050 1350 50  0001 C CNN
+F 3 "" H 3050 1350 50  0001 C CNN
+	1    3050 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1350 3200 1350
+Wire Wire Line
+	3200 1350 3200 1500
+Wire Wire Line
+	3200 1500 3350 1500
+$Comp
+L Poncho_Esqueleto:Conn_Poncho2P_2x_20x2 P1
+U 1 1 61EB0F83
+P 3600 1500
+F 0 "P1" H 3950 2047 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 3950 1941 60  0000 C CNN
+F 2 "Poncho_Esqueleto:Conn_Poncho_SinBorde" H 3950 1941 60  0001 C CNN
+F 3 "" H 3600 1500 60  0000 C CNN
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1700 4700 1600
+Wire Wire Line
+	4700 1500 4550 1500
+Wire Wire Line
+	4550 1600 4700 1600
+Connection ~ 4700 1600
+Wire Wire Line
+	4700 1600 4700 1500
 $EndSCHEMATC
