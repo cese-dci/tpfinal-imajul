@@ -10,7 +10,7 @@ Rev "1.0"
 Comp "Poncho Fotovoltaico (Trabajo final de especialidad)"
 Comment1 "Ignacio Majul"
 Comment2 "Revisora: Lorena Zacharewicz"
-Comment3 "Licencia: Open Source"
+Comment3 "Licencia: https://github.com/cese-dci/tpfinal-imajul/blob/master/license.txt"
 Comment4 ""
 $EndDescr
 Text Notes 8200 5650 0    50   ~ 0

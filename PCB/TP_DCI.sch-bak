@@ -7,7 +7,7 @@ Sheet 1 1
 Title "TP Diseno de circuitos impresos"
 Date "2020-05-21"
 Rev "1.0"
-Comp "Poncho Fotovoltaico"
+Comp "Poncho Fotovoltaico (Trabajo final de especialidad)"
 Comment1 "Ignacio Majul"
 Comment2 "Revisora: Lorena Zacharewicz"
 Comment3 "Licencia: Open Source"
@@ -128,6 +128,7 @@ F 0 "U3" H 2150 7150 50  0000 C CNN
 F 1 "ACS725xLCTR-10AU" H 2200 7250 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1850 6550 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS725-Datasheet.ashx?la=en" H 1750 6900 50  0001 C CNN
+F 4 "2100-201876-003-ND" H 1750 6900 50  0001 C CNN "Codigo Digikey"
 	1    1750 6900
 	1    0    0    -1  
 $EndComp
@@ -154,6 +155,7 @@ F 0 "U2" H 1900 6050 50  0000 C CNN
 F 1 "ACS725xLCTR-10AU" H 2200 5950 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1850 5200 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS725-Datasheet.ashx?la=en" H 1750 5550 50  0001 C CNN
+F 4 "2100-201876-003-ND" H 1750 5550 50  0001 C CNN "Codigo Digikey"
 	1    1750 5550
 	1    0    0    -1  
 $EndComp
@@ -550,6 +552,7 @@ F 0 "U4" H 5300 6100 50  0000 C CNN
 F 1 "DS3231" H 5250 6000 50  0000 C CNN
 F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5600 5000 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 5870 5650 50  0001 C CNN
+F 4 "DS3231S#T&RTR-ND" H 5600 5600 50  0001 C CNN "Codigo Digikey"
 	1    5600 5600
 	-1   0    0    -1  
 $EndComp
@@ -561,6 +564,7 @@ F 0 "U5" H 6750 5900 50  0000 C CNN
 F 1 "24AA1025" H 6750 5800 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 7000 5500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21941B.pdf" H 7000 5500 50  0001 C CNN
+F 4 "24AA1025-I/SN-ND" H 7000 5500 50  0001 C CNN "Codigo Digikey"
 	1    7000 5500
 	-1   0    0    -1  
 $EndComp
@@ -1348,6 +1352,7 @@ F 0 "U1" H 2000 2444 40  0000 C CNN
 F 1 "PS2805-4" H 2000 2368 40  0000 C CNN
 F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 1836 1976 29  0001 C CNN
 F 3 "" H 2000 2150 60  0000 C CNN
+F 4 "PS2805-4A-ND" H 2000 2150 50  0001 C CNN "Codigo Digikey"
 	2    2000 2150
 	1    0    0    -1  
 $EndComp
