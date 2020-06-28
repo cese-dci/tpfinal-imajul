@@ -14,7 +14,7 @@ Este trabajo forma parte del proyecto final de especialización del autor - CESE
 
 ## Licencia
 
-Este proyecto se rige bajo la licencia del Proyecto CIAA - ver license.txt
+Este proyecto se rige bajo la licencia del Proyecto CIAA - ver license.md
 
 
 
