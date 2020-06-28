@@ -4,7 +4,7 @@
 
 El sistema que mide desposicion de suciedad sobre paneles en un parque solar fotovoltaico. El PCB recibe dos señales analógicas de corriente para ser procesadas, contendra salidas digitales libres de pontencial, entradas digitales, un RTC y una EEPROM sobre I2C.
 
-### Prerequisites
+### Requisitos
 
 Este trabajo forma parte del proyecto final de especialización del autor - CESE 10ma cohorte.
 
