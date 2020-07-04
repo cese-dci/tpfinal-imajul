@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name CIAA_footprints)(type KiCad)(uri ${KIPRJMOD}/CIAA_footprints)(options "")(descr ""))
   (lib (name Poncho_Esqueleto)(type KiCad)(uri ${KIPRJMOD}/Poncho_Esqueleto.pretty)(options "")(descr ""))
+  (lib (name Libreria_EDU_CIAA_NXP)(type KiCad)(uri ${KIPRJMOD}/CIAA_footprints/Libreria_EDU_CIAA_NXP.pretty)(options "")(descr ""))
 )

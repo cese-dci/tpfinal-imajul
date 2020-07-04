@@ -48,10 +48,10 @@ Connection ~ 8850 6250
 Text Notes 6150 6500 2    50   ~ 0
 Canales analogicos
 $Comp
-L Connector:Conn_01x04_Male J9
+L Connector:Conn_01x04_Male J7
 U 1 1 5EED22B4
 P 5450 7000
-F 0 "J9" H 5450 7350 50  0000 C CNN
+F 0 "J7" H 5450 7350 50  0000 C CNN
 F 1 "Molex_KK254" H 5650 7250 50  0000 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5450 7000 50  0001 C CNN
 F 3 "~" H 5450 7000 50  0001 C CNN
@@ -110,11 +110,11 @@ F 3 "~" H 3600 7000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x01 AI1+1
+L Connector:Screw_Terminal_01x01 J3
 U 1 1 5EEA00D2
 P 1050 5350
-F 0 "AI1+1" H 968 5103 60  0000 C CNN
-F 1 "TB_1X1" H 968 5209 60  0000 C CNN
+F 0 "J3" H 968 5103 60  0000 C CNN
+F 1 "AI1(+)" H 968 5209 60  0000 C CNN
 F 2 "CIAA_footprints:wurth_connector" H 1182 5633 60  0001 C CNN
 F 3 "" H 1000 5400 60  0000 C CNN
 	1    1050 5350
@@ -200,17 +200,6 @@ Text Label 10350 3300 0    50   ~ 0
 NC1
 Text Label 10350 3500 0    50   ~ 0
 NA1
-$Comp
-L w_device:TB_1X3 DO1
-U 1 1 5EE96028
-P 10950 3200
-F 0 "DO1" H 10850 3550 50  0000 L CNN
-F 1 "TB_1X3" H 10850 3450 50  0000 L CNN
-F 2 "Libreria_EDU_CIAA_NXP:bornier3" H 11082 3483 60  0001 C CNN
-F 3 "" H 10900 3250 60  0000 C CNN
-	1    10950 3200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	10600 3100 10350 3100
 Wire Wire Line
@@ -256,17 +245,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric" V 9230 3050 50  0001 C CNN
 F 3 "~" H 9300 3050 50  0001 C CNN
 	1    9300 3050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L w_device:TB_1X3 DO2
-U 1 1 5F144B65
-P 10950 1150
-F 0 "DO2" H 11000 1500 50  0000 C CNN
-F 1 "TB_1X3" H 11000 1400 50  0000 C CNN
-F 2 "Libreria_EDU_CIAA_NXP:bornier3" H 11082 1433 60  0001 C CNN
-F 3 "" H 10900 1200 60  0000 C CNN
-	1    10950 1150
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10400 2550 10400 2450
@@ -348,7 +326,7 @@ Wire Wire Line
 	1750 6050 2250 6050
 Connection ~ 2250 7450
 Wire Wire Line
-	2250 7450 2550 7450
+	2250 7450 2400 7450
 Connection ~ 2550 7450
 Connection ~ 2900 6400
 Wire Wire Line
@@ -375,6 +353,7 @@ F 0 "K2" H 10500 1900 50  0000 L CNN
 F 1 "G5V-1" H 10450 1800 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 11330 2120 50  0001 C CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 10200 2150 50  0001 C CNN
+F 4 "Z773-ND" H 10200 2150 50  0001 C CNN "Codigo Digikey"
 	1    10200 2150
 	1    0    0    -1  
 $EndComp
@@ -494,6 +473,7 @@ F 0 "K1" H 10500 3950 50  0000 L CNN
 F 1 "G5V-1" H 10450 3850 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 11330 4170 50  0001 C CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 10200 4200 50  0001 C CNN
+F 4 "Z773-ND" H 10200 4200 50  0001 C CNN "Codigo Digikey"
 	1    10200 4200
 	1    0    0    -1  
 $EndComp
@@ -705,11 +685,11 @@ Wire Wire Line
 Wire Wire Line
 	5600 6100 6500 6100
 $Comp
-L Connector:Screw_Terminal_01x01 AI1-1
+L Connector:Screw_Terminal_01x01 J4
 U 1 1 5EDE1FB3
 P 1050 5750
-F 0 "AI1-1" H 968 5503 60  0000 C CNN
-F 1 "TB_1X1" H 968 5609 60  0000 C CNN
+F 0 "J4" H 968 5503 60  0000 C CNN
+F 1 "AI1(-)" H 968 5609 60  0000 C CNN
 F 2 "CIAA_footprints:wurth_connector" H 1182 6033 60  0001 C CNN
 F 3 "" H 1000 5800 60  0000 C CNN
 	1    1050 5750
@@ -720,22 +700,22 @@ Wire Wire Line
 Wire Wire Line
 	1250 6700 1350 6700
 $Comp
-L Connector:Screw_Terminal_01x01 AI2+1
+L Connector:Screw_Terminal_01x01 J5
 U 1 1 5EE2CC55
 P 1050 6700
-F 0 "AI2+1" H 968 6453 60  0000 C CNN
-F 1 "TB_1X1" H 968 6559 60  0000 C CNN
+F 0 "J5" H 968 6453 60  0000 C CNN
+F 1 "AI2(+)" H 968 6559 60  0000 C CNN
 F 2 "CIAA_footprints:wurth_connector" H 1182 6983 60  0001 C CNN
 F 3 "" H 1000 6750 60  0000 C CNN
 	1    1050 6700
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x01 AI2-1
+L Connector:Screw_Terminal_01x01 J6
 U 1 1 5EE2CC5F
 P 1050 7100
-F 0 "AI2-1" H 968 6853 60  0000 C CNN
-F 1 "TB_1X1" H 968 6959 60  0000 C CNN
+F 0 "J6" H 968 6853 60  0000 C CNN
+F 1 "AI2(-)" H 968 6959 60  0000 C CNN
 F 2 "CIAA_footprints:wurth_connector" H 1182 7383 60  0001 C CNN
 F 3 "" H 1000 7150 60  0000 C CNN
 	1    1050 7100
@@ -1269,7 +1249,8 @@ P 2000 1350
 F 0 "U1" H 2000 1644 40  0000 C CNN
 F 1 "PS2805-4" H 2000 1568 40  0000 C CNN
 F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 1836 1176 29  0001 C CNN
-F 3 "" H 2000 1350 60  0000 C CNN
+F 3 "http://www.cel.com/pdf/datasheets/ps2805.pdf" H 2000 1350 60  0001 C CNN
+F 4 "PS2805-4A-ND" H 2000 1350 50  0001 C CNN "Codigo Digikey"
 	1    2000 1350
 	1    0    0    -1  
 $EndComp
@@ -1297,17 +1278,6 @@ F 3 "~" H 1550 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 1450 2900 1450
-$Comp
-L Device:LED LED1
-U 1 1 5F79458B
-P 3050 1450
-F 0 "LED1" H 3150 1300 50  0000 C CNN
-F 1 "green" H 2950 1300 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3050 1450 50  0001 C CNN
-F 3 "~" H 3050 1450 50  0001 C CNN
-	1    3050 1450
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:R R2
 U 1 1 5F76DBB2
@@ -1351,7 +1321,7 @@ P 2000 2150
 F 0 "U1" H 2000 2444 40  0000 C CNN
 F 1 "PS2805-4" H 2000 2368 40  0000 C CNN
 F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 1836 1976 29  0001 C CNN
-F 3 "" H 2000 2150 60  0000 C CNN
+F 3 "http://www.cel.com/pdf/datasheets/ps2805.pdf" H 2000 2150 60  0001 C CNN
 F 4 "PS2805-4A-ND" H 2000 2150 50  0001 C CNN "Codigo Digikey"
 	2    2000 2150
 	1    0    0    -1  
@@ -1360,17 +1330,6 @@ Wire Wire Line
 	2350 2050 2400 2050
 Wire Wire Line
 	2850 2250 2900 2250
-$Comp
-L Device:LED LED2
-U 1 1 605559D3
-P 3050 2250
-F 0 "LED2" H 3150 2100 50  0000 C CNN
-F 1 "green" H 2950 2100 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3050 2250 50  0001 C CNN
-F 3 "~" H 3050 2250 50  0001 C CNN
-	1    3050 2250
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:R R7
 U 1 1 605559DD
@@ -1411,17 +1370,6 @@ Wire Wire Line
 	2350 2850 2400 2850
 Wire Wire Line
 	2850 3050 2900 3050
-$Comp
-L Device:LED LED3
-U 1 1 6066CF61
-P 3050 3050
-F 0 "LED3" H 3150 2900 50  0000 C CNN
-F 1 "green" H 2950 2900 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3050 3050 50  0001 C CNN
-F 3 "~" H 3050 3050 50  0001 C CNN
-	1    3050 3050
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:R R13
 U 1 1 6066CF6B
@@ -1778,8 +1726,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 1200 4100 1200
 Wire Wire Line
-	2500 1050 3800 1050
-Wire Wire Line
 	2500 1850 3700 1850
 Wire Wire Line
 	5450 2900 5900 2900
@@ -1849,11 +1795,11 @@ F 3 "~" H 1550 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L w_device:TB_1X2 DI2
+L w_device:TB_1X2 J10
 U 1 1 5F26CDA1
 P 700 2100
-F 0 "DI2" H 600 2450 50  0000 L CNN
-F 1 "TB_1X2" H 600 2350 50  0000 L CNN
+F 0 "J10" H 600 2450 50  0000 L CNN
+F 1 "DI2" H 600 2350 50  0000 L CNN
 F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 832 2383 60  0001 C CNN
 F 3 "" H 650 2150 60  0000 C CNN
 	1    700  2100
@@ -1879,16 +1825,17 @@ P 2000 2950
 F 0 "U1" H 2000 3244 40  0000 C CNN
 F 1 "PS2805-4" H 2000 3168 40  0000 C CNN
 F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 1836 2776 29  0001 C CNN
-F 3 "" H 2000 2950 60  0000 C CNN
+F 3 "http://www.cel.com/pdf/datasheets/ps2805.pdf" H 2000 2950 60  0001 C CNN
+F 4 "PS2805-4A-ND" H 2000 2950 50  0001 C CNN "Codigo Digikey"
 	3    2000 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L w_device:TB_1X2 DI1
+L w_device:TB_1X2 J9
 U 1 1 5EF8CDE6
 P 700 1300
-F 0 "DI1" H 600 1650 50  0000 L CNN
-F 1 "TB_1X2" H 600 1550 50  0000 L CNN
+F 0 "J9" H 600 1650 50  0000 L CNN
+F 1 "DI1" H 600 1550 50  0000 L CNN
 F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 832 1583 60  0001 C CNN
 F 3 "" H 650 1350 60  0000 C CNN
 	1    700  1300
@@ -1931,11 +1878,11 @@ F 3 "~" H 1550 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L w_device:TB_1X2 DI3
+L w_device:TB_1X2 J11
 U 1 1 5F491F3E
 P 700 2900
-F 0 "DI3" H 600 3250 50  0000 L CNN
-F 1 "TB_1X2" H 600 3150 50  0000 L CNN
+F 0 "J11" H 600 3250 50  0000 L CNN
+F 1 "DI3" H 600 3150 50  0000 L CNN
 F 2 "Libreria_EDU_CIAA_NXP:bornier2" H 832 3183 60  0001 C CNN
 F 3 "" H 650 2950 60  0000 C CNN
 	1    700  2900
@@ -1997,4 +1944,88 @@ Wire Wire Line
 	5450 3000 6000 3000
 Wire Wire Line
 	6000 3000 6000 3600
+$Comp
+L Device:LED D6
+U 1 1 5F0C1433
+P 3050 1450
+F 0 "D6" H 3043 1573 50  0000 C CNN
+F 1 "verde" H 3043 1664 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3050 1450 50  0001 C CNN
+F 3 "~" H 3050 1450 50  0001 C CNN
+	1    3050 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 1050 3800 1050
+$Comp
+L Device:LED D7
+U 1 1 5F0FB0B5
+P 3050 2250
+F 0 "D7" H 3043 2373 50  0000 C CNN
+F 1 "verde" H 3043 2464 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3050 2250 50  0001 C CNN
+F 3 "~" H 3050 2250 50  0001 C CNN
+	1    3050 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5F0FB94C
+P 3050 3050
+F 0 "D8" H 3043 3173 50  0000 C CNN
+F 1 "verde" H 3043 3264 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3050 3050 50  0001 C CNN
+F 3 "~" H 3050 3050 50  0001 C CNN
+	1    3050 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L w_device:TB_1X3 J1
+U 1 1 5F12E750
+P 10950 1150
+F 0 "J1" H 11050 1550 60  0000 R CNN
+F 1 "DO2" H 11100 1450 60  0000 R CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier3" H 10900 1200 60  0001 C CNN
+F 3 "" H 10900 1200 60  0000 C CNN
+	1    10950 1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L w_device:TB_1X3 J2
+U 1 1 5F170413
+P 10950 3200
+F 0 "J2" H 11050 3600 60  0000 R CNN
+F 1 "DO1" H 11100 3500 60  0000 R CNN
+F 2 "Libreria_EDU_CIAA_NXP:bornier3" H 10900 3250 60  0001 C CNN
+F 3 "" H 10900 3250 60  0000 C CNN
+	1    10950 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0134
+U 1 1 5F2065A8
+P 2400 7550
+F 0 "#PWR0134" H 2400 7350 50  0001 C CNN
+F 1 "GNDPWR" H 2404 7396 50  0000 C CNN
+F 2 "" H 2400 7500 50  0001 C CNN
+F 3 "" H 2400 7500 50  0001 C CNN
+	1    2400 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 7550 2400 7450
+Connection ~ 2400 7450
+Wire Wire Line
+	2400 7450 2550 7450
+$Comp
+L Poncho_Esqueleto:Logo_Poncho G1
+U 1 1 5F4C540D
+P 3200 4000
+F 0 "G1" H 3150 3600 60  0001 C CNN
+F 1 "Logo_Poncho" H 3400 3600 60  0001 C CNN
+F 2 "Poncho_Esqueleto:Logo_Poncho" H 3200 4416 60  0001 C CNN
+F 3 "" H 3200 4000 60  0001 C CNN
+	1    3200 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
